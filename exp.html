@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="app.css" />
+  <script src="app.js"></script>
+
+  <title>Browser</title>
+</head>
+  <div class="widget-wrap">
+  <h1>EXPENSE LIST</h1>
+  
+  
+  <!-- (A) ADD NEW RECORD -->
+  <form id="add_form" onsubmit="return track.add()">
+    <input id="add_date" type="date" required/>
+    <input id="add_name" type="text" placeholder="Item Name" required/>
+   
+    <input id="add_amt" type="number"  placeholder="Amount"  />
+    
+  <label for="items"></label>
+<select id="add_items" name="items">
+  <option value=" ">Items</option>
+  <option value="movie">Movie</option>
+  <option value="food">Food</option>
+  <option value="ele-bills">Ele-bills</option>
+  <option value="rent">Rents</option>
+</select>
+   
+    <input type="submit" value="Add"/>
+  </form>
+
+  <!-- (B) RECORDS -->
+  <div id="rec_wrap"></div>
+  </html>
+  

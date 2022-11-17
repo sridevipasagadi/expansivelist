@@ -1,0 +1,62 @@
+/* (A) ENTIRE PAGE */
+form, input, select { padding: 10px; }
+input[type=submit], input[type=button] {
+  padding: 10px 20px;
+  color: #fff;
+  border: 0;
+  background: #933333;
+  cursor: pointer;
+}
+
+/* (B) ADD ITEM */
+#add_form {
+  margin-bottom: 5px;
+  display: flex;
+  border: 1px solid #eee;
+  background: #f2f2f2;
+}
+#add_date {}
+#add_name { flex-grow: 1; }
+#add_amt { width: 100px; }
+
+/* (C) RECORDS */
+#rec_wrap {}
+#rec_wrap .row {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  background: #ededed;
+}
+#rec_wrap .row:nth-child(even) { background: #fff; }
+#rec_wrap .row.total {
+  font-weight: 700;
+  padding: 10px;
+  border: 1px solid #f00;
+  background: #fff3f3;
+}
+#rec_wrap .row div { padding: 0 10px; }
+#rec_wrap .date {}
+#rec_wrap .name { flex-grow: 1; }
+#rec_wrap .amt {}
+
+/* (X) DOES NOT MATTER */
+/* PAGE & BODY */
+* {
+  font-family: arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
+/* WIDGET */
+.widget-wrap {
+  width: 600px; 
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.8);
+}
